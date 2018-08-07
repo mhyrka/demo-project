@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#todos {
+  display: grid;
+  height: 75vh;
+  width: 100vw;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0fr;
+  grid-gap: 1px 1px;
+  /* grid-template-areas: ". . ."; */
+  background-color: #e5e7e1;
+  /* justify-content: center; */
+}
+
+.todo-labels {
+  grid-row: 0 / 0;
+  height: 100vh;
+}
+#in-progress,
+#completed,
+#approved {
+  grid-row: 0 / 1;
+  height: 50px;
+  width: 200px;
+  display: flex;
+  justify-self: center;
+  background-color: #cfd8dc;
+  font-weight: bold;
+  margin-top: -50px;
+}
+
+#in-progress {
+  grid-column: 2 / 3;
+}
+
+#completed {
+  grid-column: 3 / 4;
+}
+
+#approved {
+  grid-column: 4 / 5;
+}
+
+#add-task {
+  margin-top: 15px;
+  grid-column: 1 / 2;
+  display: flex;
+  justify-self: center;
+  background-color: #64b5f6;
+}
+
+#footer {
+  background-color: #b71c1c;
+  position: absolute;
+  margin-bottom: -45px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 7.5vh;
+  align-items: center;
+}
+
+.task-list {
+  /* font-size: 400%; */
+  grid-column: 1 / 1;
+  margin-top: 25px;
+  justify-self: center;
+  /* grid-row: 0 / 0; */
+}
+
+.todo-cards {
+  margin-top: 15px;
+}
