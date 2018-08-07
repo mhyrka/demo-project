@@ -35,7 +35,7 @@ class SimpleCard extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="cards-container">
         {this.props.UiStore.tasks.map((task, index) => (
           <Card className="todo-cards" key={index}>
             <CardContent>
@@ -58,26 +58,4 @@ class SimpleCard extends React.Component {
   }
 }
 
-{
-  /* <div>
-  {this.props.tasks.map((task, index) => (
-    <Card key={index}>
-      <CardContent>
-        <Typography variant="headline" component="h2">
-          {task}
-        </Typography>
-        <Typography color="textSecondary">adjective</Typography>
-        <Typography component="p">
-          well meaning and kindly.
-          <br />
-          {'"a benevolent smile"'}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
-  ))}
-</div> */
-}
 export default withStyles(styles)(SimpleCard)

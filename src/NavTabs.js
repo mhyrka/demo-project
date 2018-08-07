@@ -7,6 +7,8 @@ import Tab from "@material-ui/core/Tab"
 import Typography from "@material-ui/core/Typography"
 import BlankForms from "./components/BlankForms"
 import Todos from "./components/Todos"
+import Legal from "./components/Legal"
+import MyCalendar from "./components/Calendar"
 
 function TabContainer(props) {
   return <Typography component="div">{props.children}</Typography>
@@ -63,7 +65,16 @@ class NavTabs extends React.Component {
             <BlankForms />
           </TabContainer>
         )}
-        {value === 2 && <TabContainer>Item Three</TabContainer>}
+        {value === 2 && (
+          <TabContainer>
+            <Legal />
+          </TabContainer>
+        )}
+        {value === 3 && (
+          <TabContainer>
+            <MyCalendar />
+          </TabContainer>
+        )}
       </div>
     )
   }
