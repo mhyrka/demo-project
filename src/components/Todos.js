@@ -74,7 +74,7 @@ class Todos extends React.Component {
           variant="extendedFab"
           aria-label="Delete"
           id="add-task"
-          style={{ width: "200px" }}
+          style={{ width: "200px", backgroundColor: "#A5D6A7" }}
         >
           <AddIcon />
           Add Task
@@ -94,13 +94,22 @@ class Todos extends React.Component {
         <Dialog open={this.state.open} onClose={this.handleClose} aria-labelledby="form-dialog-title">
           <DialogTitle id="form-dialog-title">New Task</DialogTitle>
           <DialogContent>
-            <TextField autoFocus margin="dense" id="title" label="Title" fullWidth onChange={this.handleChange} />
+            <TextField
+              autoFocus
+              margin="dense"
+              style={{ color: "black" }}
+              id="title"
+              label="Title"
+              fullWidth
+              onChange={this.handleChange}
+            />
             <TextField
               autoFocus
               margin="dense"
               id="description"
               label="Description"
               fullWidth
+              color="#B71C1C"
               onChange={this.handleChange}
             />
             <DatePickers changeDate={this.handleChange} />
