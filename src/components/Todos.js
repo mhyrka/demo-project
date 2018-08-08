@@ -54,7 +54,6 @@ class Todos extends React.Component {
   handleSubmit = e => {
     e.preventDefault()
     this.props.UiStore.addTask(this.newTask)
-    // this.tasks.push(this.newTask)
     this.setState({ open: false })
   }
 
@@ -109,7 +108,6 @@ class Todos extends React.Component {
               id="description"
               label="Description"
               fullWidth
-              color="#B71C1C"
               onChange={this.handleChange}
             />
             <DatePickers changeDate={this.handleChange} />

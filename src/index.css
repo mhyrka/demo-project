@@ -83,6 +83,30 @@ body {
   background-color: #b71c1c;
   position: absolute;
   margin-top: 10px;
-  /* margin-left: -590px; */
   margin-left: 10px;
+}
+
+#point-of-sale {
+  display: grid;
+  height: 75vh;
+  width: 100vw;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0fr;
+  grid-gap: 1px 1px;
+  background-color: #e5e7e1;
+  overflow: scroll;
+  margin-right: 2vw;
+  padding-left: 2vw;
+}
+#pos-form {
+  grid-column: 0 / 1;
+}
+
+#past-invoices {
+  grid-column: 2 / 3;
+  margin-left: 2vw;
+}
+
+.pos-form-input {
+  width: 45vw;
 }

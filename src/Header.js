@@ -37,6 +37,8 @@ function Header(props) {
             style={{ display: "flex", alignItems: "center", height: "90px" }}
           >
             <img src={logo} alt="logo" className="header-logo" />
+            {/* <h1 id="main-logo">eCOMPLI™</h1>
+            <h2>online beverage compliance</h2> */}
           </Typography>
 
           <Button color="inherit">Logout</Button>

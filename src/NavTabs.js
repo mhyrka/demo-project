@@ -9,6 +9,7 @@ import BlankForms from "./components/BlankForms"
 import Todos from "./components/Todos"
 import Legal from "./components/Legal"
 import MyCalendar from "./components/Calendar"
+import PointOfSale from "./components/PointOfSale"
 
 function TabContainer(props) {
   return <Typography component="div">{props.children}</Typography>
@@ -73,6 +74,11 @@ class NavTabs extends React.Component {
         {value === 3 && (
           <TabContainer>
             <MyCalendar />
+          </TabContainer>
+        )}
+        {value === 4 && (
+          <TabContainer>
+            <PointOfSale />
           </TabContainer>
         )}
       </div>
