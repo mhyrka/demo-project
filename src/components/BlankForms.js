@@ -29,7 +29,7 @@ function SimpleMediaCard(props) {
     <div
       style={{
         backgroundColor: "#E4E8E1",
-        height: "75vh",
+        height: "77.5vh",
         display: "flex",
         flexDirection: "row",
 
@@ -40,7 +40,16 @@ function SimpleMediaCard(props) {
       <Button variant="fab" aria-label="Add" className={classes.button} id="add-form">
         <AddIcon />
       </Button>
-      <div style={{ marginLeft: "45px", display: "flex", flexDirection: "row", marginTop: "15px" }}>
+      <div
+        style={{
+          width: "100vw",
+          marginLeft: "45px",
+          display: "flex",
+          flexDirection: "row",
+          marginTop: "15px",
+          justifyContent: "center"
+        }}
+      >
         <Card className={classes.card}>
           <CardMedia className={classes.media} image={require("../dummyFormPic.png")} title="Contemplative Reptile" />
           <CardContent>

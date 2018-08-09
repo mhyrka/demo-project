@@ -13,14 +13,14 @@ class MyCalendar extends Component {
       {
         start: new Date(),
         end: new Date(moment().add(1, "days")),
-        title: "Some title"
+        title: "Sales Meeting"
       }
     ]
   }
 
   render() {
     return (
-      <div className="MyCalendar" style={{ height: "75vh", overflow: "scroll" }}>
+      <div className="MyCalendar" style={{ height: "77.5vh", overflow: "scroll" }}>
         <Calendar defaultDate={new Date()} defaultView="month" events={this.state.events} style={{ height: "100vh" }} />
       </div>
     )

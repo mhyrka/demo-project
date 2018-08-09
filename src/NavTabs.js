@@ -48,37 +48,37 @@ class NavTabs extends React.Component {
             onChange={this.handleChange}
             style={{ color: "black", display: "flex", justifyContent: "space-around", width: "100vw" }}
           >
+            <Tab label="Point of Sale" href="#basic-tabs" />
             <Tab label="Todos" />
             <Tab label="Blank Forms" />
             <Tab label="Legal" />
             <Tab label="Calendar" />
-            <Tab label="Point of Sale" href="#basic-tabs" />
             <Tab label="Contacts" />
           </Tabs>
         </AppBar>
         {value === 0 && (
           <TabContainer style={{ height: "80vh", width: "100vw" }}>
-            <Todos />
+            <PointOfSale />
           </TabContainer>
         )}
         {value === 1 && (
           <TabContainer>
-            <BlankForms />
+            <Todos />
           </TabContainer>
         )}
         {value === 2 && (
           <TabContainer>
-            <Legal />
+            <BlankForms />
           </TabContainer>
         )}
         {value === 3 && (
           <TabContainer>
-            <MyCalendar />
+            <Legal />
           </TabContainer>
         )}
         {value === 4 && (
           <TabContainer>
-            <PointOfSale />
+            <MyCalendar />
           </TabContainer>
         )}
       </div>
