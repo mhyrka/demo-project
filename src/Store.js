@@ -1,5 +1,4 @@
-import { action, observable, extendObservable, computed, autorun } from "mobx"
-import { inject, observer } from "mobx-react"
+import { action, observable, computed } from "mobx"
 
 class UiStore {
   @observable selectedCategory = ""

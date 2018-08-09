@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import Button from "@material-ui/core/Button"
 import TextField from "@material-ui/core/TextField"
-import Store from "../Store"
+
 import { inject, observer } from "mobx-react"
 import SearchIcon from "@material-ui/icons/Search"
 
@@ -16,7 +16,7 @@ class PointOfSale extends Component {
   }
   handleChange = e => {
     e.preventDefault()
-    this.newOrder[`${e.target.id.toLowerCase()}`] = `${e.target.value}`
+    // this.newOrder[`${e.target.id.toLowerCase()}`] = `${e.target.value}`
   }
   handlePriceChange = e => {
     this.props.UiStore.handlePriceChange(e.target.value)

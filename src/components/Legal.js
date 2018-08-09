@@ -8,7 +8,6 @@ import CardMedia from "@material-ui/core/CardMedia"
 import Button from "@material-ui/core/Button"
 import Typography from "@material-ui/core/Typography"
 import AddIcon from "@material-ui/icons/Add"
-import Icon from "@material-ui/core/Icon"
 
 const styles = {
   card: {
@@ -51,7 +50,7 @@ function SimpleMediaCard(props) {
           </CardContent>
           <CardActions>
             <Button size="small" color="primary">
-              Print
+              Share
             </Button>
             <Button size="small" color="primary">
               Edit
@@ -67,7 +66,7 @@ function SimpleMediaCard(props) {
           </CardContent>
           <CardActions>
             <Button size="small" color="primary">
-              Print
+              Share
             </Button>
             <Button size="small" color="primary">
               Edit
@@ -83,7 +82,7 @@ function SimpleMediaCard(props) {
           </CardContent>
           <CardActions>
             <Button size="small" color="primary">
-              Print
+              Share
             </Button>
             <Button size="small" color="primary">
               Edit
